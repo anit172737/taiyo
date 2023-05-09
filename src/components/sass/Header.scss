@@ -1,0 +1,30 @@
+@import "./base";
+
+.header {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 10vw;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: $color-primary-light;
+  padding: 0px 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px -8px #82868b;
+
+  h1 {
+    font-size: 36px;
+  }
+
+  &__add {
+    height: 50px;
+    width: 100%;
+    background-color: $color-primary;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: myFont;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
