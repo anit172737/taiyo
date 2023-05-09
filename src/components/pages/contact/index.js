@@ -133,8 +133,8 @@ const Contact = () => {
           handleDelete={handleDelete}
         />
       )}
-      <Header title="Contact" add={true} handleAdd={handleAdd} />
-      <div>
+      <Header title="Contacts" add={true} handleAdd={handleAdd} />
+      <div className="contact__table">
         <DataTable
           pagination
           subHeader

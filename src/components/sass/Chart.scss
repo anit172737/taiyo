@@ -18,4 +18,9 @@
   height: 30vw !important;
   width: 77vw !important;
   border-radius: 20px !important;
+
+  @media only screen and (max-width: 770px) {
+    width: 93vw !important;
+    height: 55vw !important;
+  }
 }

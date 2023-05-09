@@ -10,14 +10,7 @@ const Sidebar = () => {
       <div className="sidebar__nav">
         <NavLink
           to="/"
-          className="sidebar__nav--navlink"
-          style={{
-            fontWeight: "800",
-            color: "white",
-            height: "85px",
-            display: "grid",
-            alignItems: "center",
-          }}
+          className="sidebar__nav--navlink sidebar__nav--navlink-title"
         >
           @TAIYO@
         </NavLink>
@@ -32,7 +25,7 @@ const Sidebar = () => {
               : "sidebar__nav--navlink"
           }
         >
-          Contact
+          Contacts
         </NavLink>
         <NavLink
           to="/charts-and-maps"

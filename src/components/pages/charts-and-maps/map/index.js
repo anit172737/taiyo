@@ -24,10 +24,10 @@ const Map = () => {
     dispatch(fetchCountryDataList());
   }, []);
 
-  const position = [51.505, -0.09];
+  const position = [20.5937, 78.9629];
   return (
     <div className="chart chart__noPadding">
-      <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
+      <MapContainer center={position} zoom={4} scrollWheelZoom={false}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -57,7 +57,10 @@ const Map = () => {
                         <strong>Recovered:</strong> {country.recovered}
                       </li>
                       <li>
-                        <strong>Last Update:</strong> {country.updatedFormatted}
+                        <strong>Active:</strong> {country.active}
+                      </li>
+                      <li>
+                        <strong>Population:</strong> {country.population}
                       </li>
                     </ul>
                   </>

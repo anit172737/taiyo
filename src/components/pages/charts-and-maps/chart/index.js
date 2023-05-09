@@ -27,9 +27,9 @@ ChartJS.register(
 const Chart = () => {
   const { graphDataList, loader } = useSelector((state) => state?.chartsMaster);
   const dispatch = useDispatch();
-  let cases = graphDataList.cases;
-  let deaths = graphDataList.deaths;
-  let recovered = graphDataList.recovered;
+  let cases = graphDataList?.cases;
+  let deaths = graphDataList?.deaths;
+  let recovered = graphDataList?.recovered;
 
   useEffect(() => {
     dispatch(fetchGraphDataList());
